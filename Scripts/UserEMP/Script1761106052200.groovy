@@ -25,6 +25,8 @@ WS.verifyResponseStatusCode(respGetid, 200)
 def userid = WS.getElementPropertyValue(respGetid, '[0].id')
 println('User id : '+ userid)
 
+
+
 //Update data user 
 def respUpdateuser = WS.sendRequest(findTestObject('UPDATE'))
 	//verify status code
@@ -35,6 +37,8 @@ println('Job level: '+userjob)
 def usersalary = WS.getElementPropertyValue(respGetid, '[0].salary')
 println('Job level: '+usersalary)
 
+
+
 //Tambah data user
 def resAdduser = WS.sendRequest(findTestObject('POSTuser'))
  	//verify status code
@@ -44,6 +48,8 @@ def adduserid = WS.getElementPropertyValue(resAdduser, '[0].id')
 def addusername =  WS.getElementPropertyValue(resAdduser, '[0].username')
 println('User id : '+ adduserid)
 println('Username : '+ addusername)
+
+
 
 //Hapus data user
 def reshapususer= WS.sendRequest(findTestObject('DELETEuser'))
@@ -62,3 +68,5 @@ if (username==[]) {
     println('Data ditemukan')
 	 println(username)
 }
+
+
