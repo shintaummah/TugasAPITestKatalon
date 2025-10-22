@@ -1,52 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POSTUser</name>
+   <name>DELETEuser</name>
    <tag></tag>
-   <elementGuidId>992bdb25-523b-42c2-94a4-4f519d80349d</elementGuidId>
+   <elementGuidId>90fc33f1-91a4-42cc-8833-96b0b82f345f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;first_name\&quot;: \&quot;Shinta\&quot;,\n  \&quot;last_name\&quot;: \&quot;Ummah\&quot;,\n  \&quot;username\&quot;: \&quot;shintaummah\&quot;,\n  \&quot;job_position\&quot;: \&quot;Software QA\&quot;,\n  \&quot;job_level\&quot;: \&quot;Mid\&quot;,\n  \&quot;salary\&quot;: 8000000,\n  \&quot;work_duration\&quot;: 2\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>apikey</name>
       <type>Main</type>
       <value>sb_secret_VMbVohxbtlp7c4H4xzd7UQ_CGP_TGVv</value>
-      <webElementGuid>03091c5c-7920-4f8c-9dd6-18ccb2411199</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>60703cec-c873-4d97-a727-e3c65b00750d</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Prefer</name>
-      <type>Main</type>
-      <value>return=representation</value>
-      <webElementGuid>b870f554-dd61-40eb-adc0-c7b4d39d9ed0</webElementGuid>
+      <webElementGuid>98157e9c-f455-4597-baac-de9c4eca5009</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.3.1</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://hjaltjbqyttixmfubktb.supabase.co/rest/v1/users</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>https://hjaltjbqyttixmfubktb.supabase.co/rest/v1/users?username=eq.shintaummah</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

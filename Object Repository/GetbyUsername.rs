@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POSTUser</name>
+   <name>GetbyUsername</name>
    <tag></tag>
-   <elementGuidId>992bdb25-523b-42c2-94a4-4f519d80349d</elementGuidId>
+   <elementGuidId>4d561f0d-375f-429f-8324-31036863603e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -11,19 +11,15 @@
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;first_name\&quot;: \&quot;Shinta\&quot;,\n  \&quot;last_name\&quot;: \&quot;Ummah\&quot;,\n  \&quot;username\&quot;: \&quot;shintaummah\&quot;,\n  \&quot;job_position\&quot;: \&quot;Software QA\&quot;,\n  \&quot;job_level\&quot;: \&quot;Mid\&quot;,\n  \&quot;salary\&quot;: 8000000,\n  \&quot;work_duration\&quot;: 2\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>apikey</name>
       <type>Main</type>
       <value>sb_secret_VMbVohxbtlp7c4H4xzd7UQ_CGP_TGVv</value>
-      <webElementGuid>03091c5c-7920-4f8c-9dd6-18ccb2411199</webElementGuid>
+      <webElementGuid>28616def-50b2-4e97-9a28-566e652410f0</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -31,22 +27,14 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>60703cec-c873-4d97-a727-e3c65b00750d</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Prefer</name>
-      <type>Main</type>
-      <value>return=representation</value>
-      <webElementGuid>b870f554-dd61-40eb-adc0-c7b4d39d9ed0</webElementGuid>
+      <webElementGuid>ae9d4c93-9d37-4fbd-b7e2-dad253b4a853</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.3.1</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://hjaltjbqyttixmfubktb.supabase.co/rest/v1/users</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://hjaltjbqyttixmfubktb.supabase.co/rest/v1/users?username=eq.${username}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -55,6 +43,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e480e3d7-5670-4663-9699-53ab118ad3dc</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
