@@ -26,7 +26,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://hjaltjbqyttixmfubktb.supabase.co/rest/v1/users?id=eq.${id}</restUrl>
+   <restUrl>${GlobalVariable.baseURL}?id=eq.${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

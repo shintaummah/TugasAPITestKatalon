@@ -46,7 +46,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>https://hjaltjbqyttixmfubktb.supabase.co/rest/v1/users?username=eq.janexxx</restUrl>
+   <restUrl>${GlobalVariable.baseURL}?username=eq.janexxx</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -46,7 +46,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://hjaltjbqyttixmfubktb.supabase.co/rest/v1/users</restUrl>
+   <restUrl>${GlobalVariable.baseURL}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -26,7 +26,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://hjaltjbqyttixmfubktb.supabase.co/rest/v1/users?username=eq.shintaummah</restUrl>
+   <restUrl>${GlobalVariable.baseURL}?username=eq.shintaummah</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
